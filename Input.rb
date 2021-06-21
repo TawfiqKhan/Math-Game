@@ -6,9 +6,9 @@ class Input
 
   def check_answer(answer)
     if(answer === self.user_answer)
-      puts "Correct!"
+      return true
     else
-      puts "InCorrect :(, correct answer is #{answer}"
+      false
     end
     
   end

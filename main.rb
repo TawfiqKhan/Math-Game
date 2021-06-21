@@ -21,4 +21,23 @@ puts "Each player has 3 lives, lets begin"
 q1 = Question.new()
 puts q1.question
 a1 = Input.new()
-a1.check_answer(q1.answer)
+# puts a1.check_answer(q1.answer) ? "Correct" : "Incorrect"
+
+def game_status (p1, p2, question, user_answer)
+  if(!user_answer.check_answer(question.answer))
+    puts "Current life #{p1.remaining_lives}"
+    p1.lose_life()
+    puts "You only have #{p1.remaining_lives} live remaining"
+  else 
+    puts "p1: #{p1.remaining_lives}/3 vs p1: #{p2.remaining_lives}/3"
+  end
+end
+
+game_status(game1.player1, game1.player2, q1, a1)
+# if(!a1.check_answer(q1.answer))
+#   puts "Current life #{game1.player1.remaining_lives}"
+#   game1.player1.lose_life()
+#   puts "You only have #{game1.player1.remaining_lives} live remaining"
+# else 
+#   puts "p1: #{game1.player1.remaining_lives}/3 vs p1: #{game1.player2.remaining_lives}/3"
+# end
