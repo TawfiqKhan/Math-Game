@@ -19,9 +19,14 @@
   # compare answer
   # show result
 
-  # class Player
+# Question class
+  # create 3 question
+  # compare answers
 
-  # end
+# input
+  # get input from user
+
+  # class Player
 
   # class Game
   #   def createGame
