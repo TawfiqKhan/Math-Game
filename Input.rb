@@ -5,20 +5,6 @@ class Input
   end
 
   def check_answer(answer)
-    if(answer === self.user_answer)
-      return true
-    else
-      false
-    end
-    
+  answer === self.user_answer
   end
 end
-
-# i = Input.new()
-
-# answer = i.user_input.to_i
-# if(answer === 5)
-#   puts "right answer is #{answer}"
-# else
-#   puts "You got is wrong"
-# end
